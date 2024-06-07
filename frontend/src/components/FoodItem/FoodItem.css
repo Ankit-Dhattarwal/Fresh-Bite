@@ -62,3 +62,13 @@
 .food-item-counter img {
   width: 30px;
 }
+.read-more,
+.read-less {
+  color: blue;
+  cursor: pointer; /* Add pointer cursor to indicate clickable */
+  /* You can add additional styles here as needed */
+}
+.read-more:hover,
+.read-less:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

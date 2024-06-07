@@ -47,7 +47,7 @@ const List = ({ url }) => {
             <div key={index} className="list-table-format">
               <img src={`${url}/images/` + item.image} alt="" />
               <p>{item.name}</p>
-              <p>{item.description}</p>
+              <p>{item.category}</p>
               <p>${item.price}</p>
               <p onClick={() => removeFood(item._id)} className="cursor">
                 X
