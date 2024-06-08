@@ -5,6 +5,7 @@ import foodRouter from "./routes/foodRoutes.js";
 import userRouter from "./routes/userRoutes.js";
 import "dotenv/config.js";
 import cartRouter from "./routes/cartRoutes.js";
+import orderRouter from "./routes/orderRoutes.js";
 
 // mongodb+srv://ankitdhattarwal:5Onwa6woBFZs59wo@fresh-bite.ocbbkw6.mongodb.net/?retryWrites=true&w=majority&appName=fresh-bite
 
@@ -25,6 +26,7 @@ app.use("/api/food", foodRouter);
 app.use("/images", express.static("uploads"));
 app.use("/api/user", userRouter);
 app.use("/api/cart", cartRouter);
+app.use("/api/order", orderRouter);
 
 app.get("/", (req, res) => {
   res.send("Api working");
